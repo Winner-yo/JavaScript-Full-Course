@@ -1,0 +1,16 @@
+#buttons, #result{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn1,#btn2,#btn3{
+    background: rgb(47, 133, 231);
+    margin: 5px;
+}
+#btn1 #btn2 #btn3:hover{
+    background: rgba(10, 117, 166, 0.715);
+}
+#result{
+    font-size: 100px;
+}
