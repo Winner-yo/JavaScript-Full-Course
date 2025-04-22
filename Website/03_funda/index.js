@@ -14,7 +14,8 @@ let newValue6=Math.sin(z)
 let newValue7=Math.cos(z)
 let newValue8=Math.tan(z)
 let newValue9 = Math.log(10)
-let maximum=Math.max(x,y,z)
+let max = Math.max(x, y, z)
+let min = Math.min(x, y, z)
 
 console.log(newValue);
 console.log()
