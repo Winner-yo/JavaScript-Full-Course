@@ -10,11 +10,11 @@ Calculate.onclick = function () {
     if (Fahrenheit_Celsius.checked) {
        temp = Number(InputValue.value);
        result = (temp - 32) * (5/9);
-       displayValue.textContent = `${result}°C`;
+       displayValue.textContent = `${result.toFixed(1)}°C`;
     } else if (Celsius_Fahrenheit.checked) {
        temp = Number(InputValue.value);
        result = temp * 9/5 + 32;
-       displayValue.textContent = `${result}°F`;
+       displayValue.textContent = `${result.toFixed(1)}°F`;
      } else {
          displayValue.textContent = `please select conversion`;
      }
