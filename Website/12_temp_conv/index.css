@@ -1,0 +1,87 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container card */
+#box {
+  background: #ffffff;
+  padding: 2rem;
+  width: 350px;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+#box h2 {
+  margin-bottom: 1.5rem;
+  color: #00796b;
+  font-size: 1.5rem;
+}
+
+/* Number input */
+#InputValue {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #b2dfdb;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s;
+}
+#InputValue:focus {
+  outline: none;
+  border-color: #00796b;
+}
+
+/* Radio group */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #555;
+  cursor: pointer;
+}
+.radio-group input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: #00796b;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Button */
+#Calculate {
+  background-color: #00796b;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+#Calculate:hover {
+  background-color: #004d40;
+}
+#Calculate:active {
+  transform: scale(0.98);
+}
