@@ -28,4 +28,5 @@ function sum(callback, x, y) {
 function displayResult(Result) {
     document.getElementById("Result").textContent =Result;
     console.log(Result)
+    console.log()
 }
