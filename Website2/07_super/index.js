@@ -8,8 +8,8 @@ class Animal{
         this.name = name;
         this.age = age;
     }
-    move() {
-        console.log(`This ${this.name} is run at speed of ${speed}`)
+    move(speed) {
+        console.log(`This ${this.name} is run at speed of ${speed}mph`)
     }
 }
 
@@ -18,20 +18,32 @@ class Rabbit extends Animal{
         super(name,age);
         this.runSpeed = runSpeed;
     }
-}
-
-class Fish extends Animal{
-    constructor(name, age, swimSpeed) {
-        super(name,age);
-        this.swimSpeed = swimSpeed;
+    run() {
+        console.log(`This ${this.name} can run`)
+        super.move(this.runSpeed)
     }
 }
 
-class Hawk extends Animal{
-    constructor(name, age, flySpeed) {
-        super(name,age);
-        this.flySpeed = flySpeed;
-    }
+class Fish extends Animal {
+  constructor(name, age, swimSpeed) {
+    super(name, age);
+    this.swimSpeed = swimSpeed;
+  }
+  swim() {
+      console.log(`This ${this.name} can swim`);
+      super.move(this.swimSpeed)
+  }
+}
+
+class Hawk extends Animal {
+  constructor(name, age, flySpeed) {
+    super(name, age);
+    this.flySpeed = flySpeed;
+  }
+  fly() {
+      console.log(`This ${this.name} can fly`);
+      super.move(this.flySpeed)
+  }
 }
 
 const rabbit =new Rabbit('rabbit',2,20)
@@ -40,3 +52,6 @@ const hawk = new Hawk('hawk', 7, 12)
 
 console.log(rabbit.name)
 console.log(fish.age)
+console.log(rabbit.runSpeed)
+hawk.fly()
+rabbit.run()
